@@ -17,11 +17,11 @@ const App = () => {
     <>
       <div className="container">
         <div className="title">Lose Win</div>
-      </div>
-      <HangmanDrawing />
-      <HangmanWord />
-      <div className="wrapper">
-        <Keyboard />
+        <HangmanDrawing />
+        <HangmanWord />
+        <div className="wrapper">
+          <Keyboard />
+        </div>
       </div>
     </>
   )

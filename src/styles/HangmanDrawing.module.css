@@ -1,0 +1,87 @@
+.gallows {
+  position: relative;
+}
+.roof {
+  width: 200px;
+  height: 10px;
+  margin-left: 120px;
+  background-color: black;
+}
+.wall {
+  width: 10px;
+  height: 400px;
+  margin-left: 120px;
+  background-color: black;
+}
+.floor {
+  width: 250px;
+  height: 10px;
+  background-color: black;
+}
+.tail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 50px;
+  background-color: black;
+}
+/* body */
+.body {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 10px;
+  height: 100px;
+  background-color: black;
+}
+.head {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  right: -30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 10px solid black;
+}
+.rightArm {
+  position: absolute;
+  top: 150px;
+  right: -100px;
+  rotate: -30deg;
+  transform-origin: left bottom;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+}
+.leftArm {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  rotate: 30deg;
+  transform-origin: right bottom;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+}
+.rightLeg {
+  position: absolute;
+  top: 210px;
+  right: -90px;
+  rotate: 60deg;
+  transform-origin: left bottom;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+}
+.leftLeg {
+  position: absolute;
+  top: 210px;
+  right: 0px;
+  rotate: -60deg;
+  transform-origin: right bottom;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+}
