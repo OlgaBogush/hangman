@@ -7,4 +7,6 @@
 }
 .letter {
   border-bottom: 0.1em solid black;
+  width: 70px;
+  text-align: center;
 }

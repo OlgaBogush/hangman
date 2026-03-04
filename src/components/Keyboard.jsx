@@ -6,14 +6,31 @@ import getLetters from "../helpers/getLetters"
 
 const KEYS = getLetters()
 
-const Keyboard = () => {
+const Keyboard = ({
+  disabled = false,
+  activeLetters,
+  inactiveLetters,
+  addClickedLetter,
+}) => {
   return (
     <div className={styles.container}>
-      {KEYS.map((item, index) => (
-        <button key={index} className={`${styles.btn}`}>
-          {item}
-        </button>
-      ))}
+      {KEYS.map((item, index) => {
+        const isActive = activeLetters.includes(item)
+        const isInactive = inactiveLetters.includes(item)
+
+        return (
+          <button
+            onClick={() => addClickedLetter(item)}
+            key={index}
+            className={`${styles.btn} ${isActive ? styles.active : ""} ${
+              isInactive ? styles.inactive : ""
+            }`}
+            disabled={isActive || isInactive || disabled}
+          >
+            {item}
+          </button>
+        )
+      })}
     </div>
   )
 }
