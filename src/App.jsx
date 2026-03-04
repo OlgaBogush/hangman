@@ -14,7 +14,7 @@ const getRandomWord = () => {
 const App = () => {
   const [word, setWord] = useState(getRandomWord)
   const [clickedLetters, setClickedLetters] = useState([])
-  // console.log(word)
+
   const incorrectLetters = clickedLetters.filter((item) => !word.includes(item))
 
   const isLoser = incorrectLetters.length >= 6
@@ -27,6 +27,10 @@ const App = () => {
     },
     [clickedLetters, isLoser, isWinner]
   )
+
+  useEffect(() => {
+    console.log(word)
+  }, [word])
 
   useEffect(() => {
     const handler = (e) => {
